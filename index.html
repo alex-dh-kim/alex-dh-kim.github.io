@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김동현 포트폴리오</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .section {
+            padding: 80px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,.1);
+        }
+        .project-card {
+            transition: transform .2s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .skill-icon {
+            font-size: 3rem;
+            color: #0d6efd;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 네비게이션 바 -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Alex Donghyun Kim</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">소개</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">프로젝트</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">기술</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">연락처</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 소개 섹션 -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/180" alt="프로필 사진" class="profile-img">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="mb-3">안녕하세요, 김동현입니다.</h2>
+                    <p class="lead">저는 혁신적인 웹 솔루션을 만드는 것을 즐기는 웹 개발자입니다.</p>
+                    <p>사용자 중심의 인터페이스와 효율적인 백엔드 시스템 구축에 깊은 관심을 가지고 있습니다. 새로운 기술을 배우고 적용하는 것을 좋아하며, 동료들과의 협업을 통해 최고의 결과물을 만들어내는 과정에서 보람을 느낍니다. 창의적인 문제 해결 능력과 꼼꼼함을 바탕으로 주어진 과제를 성공적으로 완수합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 프로젝트 섹션 -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">프로젝트</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 project-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="프로젝트 1">
+                        <div class="card-body">
+                            <h5 class="card-title">프로젝트 A</h5>
+                            <p class="card-text">최신 웹 기술을 사용한 반응형 웹사이트 구축. 사용자 경험에 초점을 맞춘 디자인과 기능을 구현했습니다.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 project-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="프로젝트 2">
+                        <div class="card-body">
+                            <h5 class="card-title">프로젝트 B</h5>
+                            <p class="card-text">Node.js와 Express를 이용한 RESTful API 서버 개발. 데이터베이스 연동 및 인증 기능을 구현했습니다.</p>
+                        </div>
+                         <div class="card-footer">
+                            <a href="#" class="btn btn-primary">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 project-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="프로젝트 3">
+                        <div class="card-body">
+                            <h5 class="card-title">프로젝트 C</h5>
+                            <p class="card-text">React 기반의 싱글 페이지 애플리케이션(SPA) 개발. 컴포넌트 기반 아키텍처를 적용하여 유지보수성을 높였습니다.</p>
+                        </div>
+                         <div class="card-footer">
+                            <a href="#" class="btn btn-primary">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 기술 섹션 -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">기술</h2>
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="skill-icon">💻</div>
+                    <h5>Frontend</h5>
+                    <p>HTML, CSS, JS, React, Vue</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="skill-icon">⚙️</div>
+                    <h5>Backend</h5>
+                    <p>Node.js, Express, Python, Django</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="skill-icon">🗃️</div>
+                    <h5>Database</h5>
+                    <p>MySQL, PostgreSQL, MongoDB</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="skill-icon">☁️</div>
+                    <h5>DevOps</h5>
+                    <p>Docker, AWS, Git</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 연락처 섹션 -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">연락처</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">이름</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">이메일</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">메시지</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">보내기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gildong Hong. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
