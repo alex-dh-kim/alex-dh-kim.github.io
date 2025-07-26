@@ -19,7 +19,7 @@ const nextConfig: NextConfig = {
   },
   // 사용자/조직 페이지 (예: https://alex-dh-kim.github.io/)에 배포하는 경우
   // basePath와 assetPrefix를 다음과 같이 설정해야 합니다.
-  basePath: isProd ? '/alex-dh-kim.github.io' : '', // 루트 경로이므로 빈 문자열
+  basePath: isProd ? '' : '', // 루트 경로이므로 빈 문자열
   assetPrefix: isProd ? 'https://alex-dh-kim.github.io/' : '', // 루트 경로이므로 '/'
 };
 

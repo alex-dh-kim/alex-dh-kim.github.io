@@ -67,9 +67,9 @@ export default function Portfolio() {
               <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
               <div className="grid grid-cols-3 gap-16">
                 {currentProjects.map((project) => (
-                  <div key={project.id}style={{padding: 20, margin: 10}} className="border">
+                  <div key={project.id} className="group block bg-white/50 dark:bg-black/50 backdrop-blur-lg rounded-2xl shadow-lg overflow-hidden transition-all duration-300 no-underline border border-gray-400 dark:border-gray-500 p-5" style={{padding: 20, margin: 10, borderRadius: 10}}>
                     <Link href={`/projects/${project.id}`} key={project.id} className="group block bg-white/50 dark:bg-black/50 backdrop-blur-lg rounded-xl shadow-lg overflow-hidden transition-all duration-300 cursor-pointer no-underline">
-                    <div className="relative h-56 bg-gray-200 dark:bg-gray-800 overflow-hidden" >
+                    <div className="relative h-56 bg-gray-200 dark:bg-gray-800 overflow-hidden" style={{borderRadius: 5}} >
                       <Image src={project.image} alt={`Project Thumbnail ${project.id}`} width={500} height={300} className="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300" />
                     </div>
                     <div className="p-6">
